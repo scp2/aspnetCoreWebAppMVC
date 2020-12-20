@@ -15,7 +15,9 @@ namespace CursoMVC.Models
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString:@"Server=(localhost)\mssqllocaldb;Database=Cursomvc;Integrated Security=True");
+            optionsBuilder.UseSqlServer(
+                connectionString:@"Server=(sql1:1433);Database=Cursomvc;Integrated Security=True;User Id=SA;Password=sA3AnRyX[AR?"
+                );
         }
     }
 }
